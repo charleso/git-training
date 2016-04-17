@@ -134,7 +134,4 @@ This is really the bare essentials.
 Understanding how and what branches are is the essence of understanding
 Git.
 
-There are two options at this point:
-
-- Looking at how the [scary reset command](reset.md) works
-- Skipping ahead to [remotes](remotes.md)
+Next up is understanding how this all works when you add [remotes](remotes.md) in the mix.
