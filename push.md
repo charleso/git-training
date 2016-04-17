@@ -78,9 +78,4 @@ just as a reminder of what is really going on.
 Next
 ----
 
-This is currently where this document ends.
-You've reached the end!
-Check out some of the other excellent [references](README.md#references)
-if you want to learn more.
-
-Good luck. :)
+Too easy? Check out the [advanced](README.md#advanced) section for more Git fun.
