@@ -123,6 +123,9 @@ So it changed the current branch, which is stored in the `HEAD` file.
 
 > Try making a new commit on `hello`, what does the graph look like now?
 
+> How would you swap two branches around?
+
+
 
 Next
 ----
@@ -132,5 +135,6 @@ Understanding how and what branches are is the essence of understanding
 Git.
 
 There are two options at this point:
-- Looking at how [reset](reset.md) works
-- Looking at [remotes and remote branches](remote.md)
+
+- Looking at how the [scary reset command](reset.md) works
+- Skipping ahead to [remotes](remotes.md)

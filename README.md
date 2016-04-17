@@ -35,7 +35,8 @@ Guides
 3. [Master](master.md)
 4. [Branches](branches.md)
 5. [Reset](reset.md)
-6. [Remotes](remote.md)
+6. [Reflog](reflog.md)
+7. [Remotes](remotes.md)
 
 
 References
