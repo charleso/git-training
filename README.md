@@ -12,7 +12,7 @@ and doesn't always improve with more exposure.
 
 One anology could be made with the following comic.
 
-![](images/elephant.jpg)
+![](images/elephant.jpg?raw=)
 
 In this case each blind man could represent a different Git command.
 By just running the commands, there are a number of cases where
