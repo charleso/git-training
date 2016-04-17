@@ -1,7 +1,7 @@
 Git - Branches
 ==============
 
-This guide is intented as a primer for understanding
+This guide is intended as a primer for understanding
 how Git branches work. You should have previously
 read [about the master branch](master.md).
 

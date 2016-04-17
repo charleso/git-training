@@ -14,6 +14,9 @@ So far we've create a few commits. Let create another.
 ```sh
 > echo "goodbye" >> file.txt
 
+# Add the new contents
+> git add .
+
 > git commit -m "Third commit"
 
 [master 41ce7fa] Third commit

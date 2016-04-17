@@ -187,9 +187,22 @@ Let me put that another way.
 - The second rule of Git remotes is that
   you **cannot checkout remote branches**
 
+As a rule I always recommend people never create a local branch called `master`
+to avoid (the eventual) confusion.
 
 
-### Advanced Questions
+### Question
+
+> If your local branch is (also) called `master`, what happens if you run `git log master`?
+> Which branch are you asking about?
+> How could you find out?
+
+> What happens if you _do_ try to checkout a remote branch?
+> How does that change the `HEAD` file?
+> Is that what you would expect?
+
+
+### Advanced Question
 
 > The `HEAD` files points to a ref, the remote branches are just refs.
 > What happens if you manually change the `HEAD` file to point to `refs/remote/origin/master`?

@@ -57,6 +57,9 @@ Let's do it again, just for fun.
 # Update the file
 > echo "hello again" >> file.txt
 
+# Add the new contents
+> git add .
+
 > git commit -m "Second commit"
 
 [master 672e562] Second commit
