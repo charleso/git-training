@@ -25,7 +25,7 @@ to `hello`.
 Let's checkout `hello`.
 
 ```sh
-> git checokut hello
+> git checkout hello
 
 > git log --graph --oneline --decorate master
 
