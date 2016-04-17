@@ -1,7 +1,7 @@
 Git - Commits
 =============
 
-This guide is intented as a primer for understanding
+This guide is intended as a primer for understanding
 how Git commits work.
 
 

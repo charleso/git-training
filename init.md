@@ -27,6 +27,3 @@ refs/
 
 Hopefully by the end of this guide some of those files
 won't seem so cryptic, and you will know what they mean.
-
-
-- TODO Talk about "repository"

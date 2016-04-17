@@ -27,6 +27,19 @@ The focus of this material is to focus on a few critical
 aspects of Git that can often cause the most amount of confusion.
 
 
+Prerequisites
+-------------
+
+Everything in this guide assumes some form of terminal/command-line with `git` installed.
+
+For Windows this means [Git for Windows](https://git-scm.com/download/win),
+ideally in the `msysgit` terminal and not Windows `Cmd`.
+If you're not sure try running `ls`, `cd` or `cat README.md`, the
+examples make some use of these commands.
+
+No GUIs.
+
+
 Sections
 --------
 

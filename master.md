@@ -1,7 +1,7 @@
 Git - Branches
 ==============
 
-This guide is intented as a primer for understanding
+This guide is intended as a primer for understanding
 what `master` is. You should have previously
 read [about commits](commit.md).
 
