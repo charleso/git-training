@@ -45,7 +45,7 @@ Sections
 
 1. [Getting started](init.md)
 2. [Commits](commit.md)
-3. [Master](master.md)
+3. [Master and HEAD](head.md)
 4. [Branches](branches.md)
 5. [Reflog](reflog.md)
 6. [Remotes](remotes.md)

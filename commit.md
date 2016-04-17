@@ -150,4 +150,4 @@ Who broke the program - oh it was Charles!!!
 Next
 ----
 
-[Next up](master.md) we're going to look at what `master` is.
+[Next up](head.md) we're going to look at what `master` is.

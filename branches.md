@@ -3,7 +3,7 @@ Git - Branches
 
 This guide is intended as a primer for understanding
 how Git branches work. You should have previously
-read [about the master branch](master.md).
+read [about the master branch](head.md).
 
 
 Branch
