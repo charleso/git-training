@@ -101,7 +101,7 @@ Reflog
 Whenever you run `commit` or `checkout` commands, Git logs the
 the old and new commits.
 So for _every_ change to your `HEAD` (and refs) Git actually tracks
-what happened. The _ref_log.
+what happened. The <i>ref</i>log.
 
 A (very bad) anology is a bank keeping a transaction log of changes
 to your account. Or at least you hope they do!
