@@ -62,8 +62,6 @@ So creating a branch as simple as just creating a single
 `refs/heads` file with a commit hash as the contents.
 
 
-### Question
-
 > What happens if you create a `refs/heads` file manually?
 
 > What happens if you change the hash of `refs/heads/hello` to another commit?
@@ -113,8 +111,6 @@ ref: refs/heads/hello
 
 So it changed the current branch, which is stored in the `HEAD` file.
 
-
-### Question
 
 > Try checkout out `master`, does the missing line appear again?
 
