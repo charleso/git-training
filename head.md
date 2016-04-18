@@ -1,5 +1,5 @@
-Git - Branches
-==============
+Git - Master
+============
 
 This guide is intended as a primer for understanding
 what `master` is. You should have previously
@@ -123,12 +123,13 @@ And at the end of the rabbit hole?
 
 That's the most recent commit!
 So `HEAD` is just a reference to `refs/heads/master`,
-which in turn is just a pointer to a commit.
+which in turn is just a reference to a specific commit,
+which captures a collection of files.
 
 Something like this:
 
 ```
-HEAD -> master -> 41ce7fa
+HEAD -> refs/heads/master -> 41ce7fa -> file.txt
 ```
 
 Actually that looks a _little_ like our `log --graph` command.
@@ -141,15 +142,25 @@ Actually that looks a _little_ like our `log --graph` command.
 * 406bb3b Initial commit
 ```
 
+It would appear that `refs/heads/master` is just the long winded way
+of saying `master`. They're the _same_ thing.
+
+Perhaps a slightly more obscure point is that a branch is just a "head" ref.
+Said another way - everything under `refs/heads` is a branch.
+We look at some other types of refs [later on](remotes.md), but for now we
+just must just focus on heads.
+
 
 ### Question
 
 > Can you use `HEAD`, `master` or even `refs/heads/master` in the `log` command?
 
+> If you make another commit what changes? Is it `HEAD` or the ref?
+
 
 Next
 ----
 
-Ok, that's probably enough for this guide.
+Ok, that's probably enough for this section.
 Next we'll see what happens when we start creating
 [multiple branches](branches.md).
