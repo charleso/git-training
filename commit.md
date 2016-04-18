@@ -67,7 +67,6 @@ Let's do it again, just for fun.
  1 file changed, 1 insertion(+)
 ```
 
-### Question
 
 > What happens if you try commiting without changing the file?
 
@@ -128,7 +127,6 @@ The first thing to note is that `672e562` is only
 the first 7 characters of a must longer hash
 `672e562c008009ec391e11a1fa3574af39428ae1`.
 
-### Question
 
 > What other forms of the hash does Git accept?
 > Can it be shorter? Longer?
@@ -147,7 +145,6 @@ that interesting when we're working by ourselves, but
 in larger projects that might be very important.
 Who broke the program - oh it was Charles!!!
 
-### Question
 
 > Create a few more commits and then look at them with log
 
