@@ -24,7 +24,8 @@ So far we've create a few commits. Let create another.
 ```
 
 So what is this `master` exactly?
-A branch obviously, but what is that _really_?
+You probably already know that it's a branch,
+but what is that?
 
 Let's take a detour.
 
