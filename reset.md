@@ -94,7 +94,7 @@ So how do we update the files at the same time?
 HEAD is now at 672e562 Second commit
 ```
 
-**WARNING* `reset --hard` can be very dangerous, it updates
+**WARNING** `reset --hard` can be very dangerous, it updates
 files on disk _without prompting_.
 If you have unsaved/uncommitted changes Git will quite happily undo
 those changes without so much as a "Do you wish to continue (y/n)".
