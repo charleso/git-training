@@ -96,6 +96,10 @@ Such as "test-1", "test-2", etc.
 
 After a while those filenames would all blur together,
 how would we know what each one contained?
+The commit hash is very big and is guaranteed to be unique,
+so you don't have to keep coming up with new names.
+If you're wondering why the hash isn't just a number,
+that's a little harder to explain (and I'm not going to try).
 
 
 Log
