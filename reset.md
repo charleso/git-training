@@ -81,8 +81,6 @@ of your working files, only the ref. This isn't any different than if
 we had tweaked the ref file manually.
 
 
-### Question
-
 > What do you expect `file.txt` to contain?
 
 
