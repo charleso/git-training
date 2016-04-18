@@ -151,6 +151,11 @@ What people _normally_ type:
 
 Branch master set up to track remote branch master from origin.
 Already on 'master'
+
+> git --graph --oneline --decorate master
+
+* a00e002 (HEAD, origin/master, master) Raw elephant image
+* 7e4bb5c Initial commit
 ```
 
 What _really_ happened.
