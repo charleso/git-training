@@ -67,6 +67,9 @@ than clone we can choose what we like, but let's stick with "origin".
 
 > Can you add more remotes to that repository?
 
+> Can a remote point to another git repository on your local machine?
+> (eg. `git remote add origin ../test`)
+
 
 Fetch
 -----
