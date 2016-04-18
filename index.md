@@ -159,7 +159,8 @@ is going to be committed, just before running `git commit`.
 Reference
 ---------
 
-The following is a _great_ guide for all the different
+The following is a _great_ overview of all the different stages
+of the git lifecycle.
 
 ![](images/git-transport.png)
 
