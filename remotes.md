@@ -138,8 +138,8 @@ Checkout
 --------
 
 **WARNING** This next section can be quite subtle but is crucial.
-This is often where Git tries to make things "easy" which leads to confusion when
-Git stops being nice and expects you to know what just happened.
+This is once place where Git tries to make things "easy" which leads to
+confusion when it stops being nice and expects you to know what just happened.
 You have been warned.
 
 So how do we checkout these remote branches?
