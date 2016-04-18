@@ -23,8 +23,8 @@ and pushing/pulling from a remote server.
 
 This material is _not_ intended to teach advanced Git
 (eg. Run `git magic --hard --all` and you'll be more 100x more productive).
-The focus of this material is to focus on a few critical
-aspects of Git that can often cause the most amount of confusion.
+The aim is to focus on a few critical aspects of Git that can often cause
+the most amount of confusion.
 
 
 Prerequisites
