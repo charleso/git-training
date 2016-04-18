@@ -85,7 +85,7 @@ Changes not staged for commit:
 
 > What do you think will happen when we commit?
 
-> Try combinations of renaming the file before/after the add.
+> What happens if you delete a file that is in index?
 
 
 Index
