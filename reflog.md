@@ -125,9 +125,3 @@ If you're interested in how that looks in `.git`:
 672e562c008009ec391e11a1fa3574af39428ae1 41ce7faa5b8b2cf480d44c3b12f0545fed9683c3 Charles O'Farrell <charleso@charleso.org> 1460856405 +1000   commit: Third commit
 41ce7faa5b8b2cf480d44c3b12f0545fed9683c3 672e562c008009ec391e11a1fa3574af39428ae1 Charles O'Farrell <charleso@charleso.org> 1460859487 +1000   checkout: moving from master to hello
 ```
-
-
-Next
-----
-
-Let's take a look at [remote branches](remotes.md)
