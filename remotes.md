@@ -25,7 +25,8 @@ Unpacking objects: 100% (15/15), done.
 Checking connectivity... done.
 ```
 
-This cloned repository comes with a few that we haven't seen before.
+This cloned repository looks a little different than our local,
+test repository.
 
 ```sh
 > git --graph --oneline --decorate master
