@@ -147,6 +147,8 @@ Who broke the program - oh it was Charles!!!
 
 > Create a few more commits and then look at them with log
 
+> Can you create a commit without changing any files?
+
 
 Next
 ----
