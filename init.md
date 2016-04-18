@@ -29,6 +29,15 @@ Hopefully by the end of this guide some of those files
 won't seem so cryptic, and you will know what they do.
 
 
+Terminology
+-----------
+
+- The `.git` folder is referred to as the "repository" or
+  "local repository"
+- The directory above the `.git` folder, where you edit your
+  actual files, is called the "working directory"
+
+
 Warning
 -------
 
