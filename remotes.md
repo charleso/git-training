@@ -134,7 +134,7 @@ Whatever old man. Show me the files!
 Checkout
 --------
 
-**WARNING** This next section is extremely tricky but crucial.
+**WARNING** This next section can be quite subtle but is crucial.
 This is often where Git tries to make things "easy" which leads to confusion when
 Git stops being nice and expects you to know what just happened.
 You have been warned.
