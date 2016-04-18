@@ -170,7 +170,7 @@ Branch master set up to track remote branch master from origin.
 Already on 'master'
 ```
 
-So what's the problem? The first one looks much easier.
+So what's the problem? Typing just `git checkout master` looks much easier.
 
 Let's see that again, but with a twist.
 
