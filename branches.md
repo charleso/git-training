@@ -14,7 +14,7 @@ that references `refs/heads/master`, which we know
 as just `master`.
 
 ```
-> git log --graph --oneline --decorate 41ce7fa
+> git log --graph --oneline --decorate master
 
 * 41ce7fa (HEAD, master) Third commit
 * 672e562 Second commit
