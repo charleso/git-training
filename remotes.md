@@ -181,7 +181,6 @@ Branch my_master set up to track remote branch master from origin.
 
 Keep in mind that this is the _exact_ same thing as before.
 The only difference is that we've given our _local_ branch a difference name.
-Let me put that another way.
 
 - The first rule of Git remotes is that
   you cannot checkout remote branches.
