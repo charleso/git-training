@@ -58,7 +58,8 @@ master
 672e562c008009ec391e11a1fa3574af39428ae1
 ```
 
-So creating a branch is just creating a single file?
+So creating a branch as simple as just creating a single
+`refs/heads` file with a commit hash as the contents.
 
 
 ### Question
