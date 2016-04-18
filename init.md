@@ -28,7 +28,11 @@ refs/
 Hopefully by the end of this guide some of those files
 won't seem so cryptic, and you will know what they do.
 
-**Note**: For the purposes of this guide we will be poking
+
+Warning
+-------
+
+For the purposes of this guide we will be poking
 around in this folder from time to time. Given that we just
 created this repository, and we're not using it for anything
 real, it's completely safe.
