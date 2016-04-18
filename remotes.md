@@ -192,8 +192,6 @@ As a rule I always recommend people never create a local branch called `master`
 to avoid (the eventual) confusion.
 
 
-### Question
-
 > If your local branch is (also) called `master`, what happens if you run `git log master`?
 > Which branch are you asking about?
 > How could you find out?
@@ -203,10 +201,7 @@ to avoid (the eventual) confusion.
 > How does that change the `HEAD` file?
 > Is that what you would expect?
 
-
-### Advanced Question
-
-> The `HEAD` files points to a ref, the remote branches are just refs.
+> [Advanced] The `HEAD` files points to a ref, the remote branches are just refs.
 > What happens if you manually change the `HEAD` file to point to `refs/remote/origin/master`?
 > If you do, and then make a commit, what happens if you `fetch` after that?
 
