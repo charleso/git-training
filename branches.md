@@ -124,7 +124,7 @@ So it changed the current branch, which is stored in the `HEAD` file.
 
 > Try making a new commit on `hello`, what does the graph look like now?
 
-> How would you swap two branches around?
+> How would you swap the two `master` and `hello` branches around?
 
 
 
