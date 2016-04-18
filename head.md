@@ -46,7 +46,6 @@ The ones I want to show now look like this:
 * 406bb3b Initial commit
 ```
 
-### Question
 
 > What does each of those options do?
 > Can you use different combinations of them?
@@ -150,8 +149,6 @@ Said another way - everything under `refs/heads` is a branch.
 We look at some other types of refs [later on](remotes.md), but for now we
 might just focus on heads.
 
-
-### Question
 
 > Can you use `HEAD`, `master` or even `refs/heads/master` in the `log` command?
 
