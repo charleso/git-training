@@ -58,7 +58,6 @@ stop you shooting yourself in the foot.
 This goes without saying but it is _always_ recommended to use Git
 commands rather than modifying the contents of the `.git` directory.
 
-### Question
 
 > We manually deleted the `master` branch by deleting a file,
 > can you work out how you would "normally" delete a branch?
@@ -108,8 +107,6 @@ to your account. Or at least you home they do!
 
 My advice - don't leave home without `git reflog`.
 
-
-### Questions
 
 > Can you re-create the `master` branch on that commit?
 
