@@ -48,8 +48,6 @@ Assuming this isn't the first commit, git knows about `file.txt`
 and is suggesting to use `git add`.
 
 
-### Question
-
 > What happens if you commit at this point?
 
 
@@ -84,7 +82,6 @@ Changes not staged for commit:
         modified:   file.txt
 ```
 
-### Question
 
 > What do you think will happen when we commit?
 
