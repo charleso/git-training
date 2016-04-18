@@ -130,7 +130,4 @@ If you're interested in how that looks in `.git`:
 Next
 ----
 
-There are two options at this point:
-
-- If you haven't already, go read about the [scary reset command](reset.md)
-- Learn about [remotes](remotes.md)
+Let's take a look at [remote branches](remotes.md)
