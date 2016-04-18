@@ -31,6 +31,7 @@ bits of information.
 - The "branch", which is indicated by `master`.
   By default `master` is the first/initial branch that is created,
   but after that there's _nothing_ special about it.
+  We'll get to [master soon](master.md)
 - A hash, which is indicated as `406bb3b` in this example.
   When you run this on your machine it _will_ be something different.
 
