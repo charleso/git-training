@@ -148,7 +148,7 @@ of saying `master`. They're the _same_ thing.
 Perhaps a slightly more obscure point is that a branch is just a "head" ref.
 Said another way - everything under `refs/heads` is a branch.
 We look at some other types of refs [later on](remotes.md), but for now we
-just must just focus on heads.
+might just focus on heads.
 
 
 ### Question
