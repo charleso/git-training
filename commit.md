@@ -35,7 +35,7 @@ bits of information.
 - A hash, which is indicated as `406bb3b` in this example.
   When you run this on your machine it _will_ be something different.
 
-This guide is only interested in the commit, we'll have plenty of time
+This section is only interested in commits, we'll have plenty of time
 to talk [about branches](branch.md).
 
 
