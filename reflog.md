@@ -98,12 +98,13 @@ Reflog
 406bb3b HEAD@{3}: commit (initial): Initial commit
 ```
 
-So whenever you run `commit` or `checkout` commands, Git logs wha
+Whenever you run `commit` or `checkout` commands, Git logs the
+the old and new commits.
 So for _every_ change to your `HEAD` (and refs) Git actually tracks
-what happened.
+what happened. The _ref_log.
 
 A (very bad) anology is a bank keeping a transaction log of changes
-to your account. Or at least you home they do!
+to your account. Or at least you hope they do!
 
 My advice - don't leave home without `git reflog`.
 
