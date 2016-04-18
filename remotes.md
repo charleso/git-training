@@ -198,7 +198,8 @@ to avoid (the eventual) confusion.
 > Which branch are you asking about?
 > How could you find out?
 
-> What happens if you _do_ try to checkout a remote branch?
+> What happens if you _do_ try to checkout a remote branch
+> (eg. `git checkout origin/master`)?
 > How does that change the `HEAD` file?
 > Is that what you would expect?
 
