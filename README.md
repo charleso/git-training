@@ -47,12 +47,12 @@ Sections
 2. [Commits](commit.md)
 3. [Master and HEAD](head.md)
 4. [Branches](branches.md)
-5. [Reflog](reflog.md)
-6. [Remotes](remotes.md)
-7. [Push](push.md)
+5. [Remotes](remotes.md)
+6. [Push](push.md)
 
 ### Advanced
 
+- [Reflog](reflog.md)
 - [Reset](reset.md)
 - [Index](index.md)
 
