@@ -153,6 +153,8 @@ might just focus on heads.
 
 > Can you use `HEAD`, `master` or even `refs/heads/master` in the `log` command?
 
+> What happens if you don't supply `log` a commit/ref, what does it default to?
+
 > If you make another commit what changes? Is it `HEAD` or the ref?
 
 
