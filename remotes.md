@@ -38,7 +38,7 @@ This cloned repository looks a little different than our test repository.
 
 ```sh
 > cd test-clone
-> git --graph --oneline --decorate master
+> git log --graph --oneline --decorate master
 
 * 41ce7fa (HEAD, origin/master, origin/HEAD, master) Third commit
 * 672e562 Second commit
@@ -162,7 +162,7 @@ What people _normally_ type:
 Branch master set up to track remote branch master from origin.
 Already on 'master'
 
-> git --graph --oneline --decorate master
+> git log --graph --oneline --decorate master
 
 * 41ce7fa (HEAD, origin/master, master) Third commit
 * 672e562 Second commit
@@ -192,7 +192,7 @@ Branch my_master set up to track remote branch master from origin.
 
 > git checkout my_master
 
-> git --graph --oneline --decorate my_master
+> git log --graph --oneline --decorate my_master
 
 * 41ce7fa (HEAD, origin/master, my_master) Third commit
 * 672e562 Second commit

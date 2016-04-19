@@ -62,7 +62,7 @@ Merge made by the 'recursive' strategy.
  1 file changed, 1 insertion(+)
  create mode 100644 remote.txt
 
-> git --graph --oneline --decorate my_master
+> git log --graph --oneline --decorate my_master
 * fdff1be (HEAD, my_master) Merge branch 'master' of ../test into my_master
 |\
 * | 6a9bac9 Working locally
@@ -96,7 +96,7 @@ Unpacking objects: 100% (2/2), done.
 From ../test
    c99f4ac..c6756d7  master     -> origin/master
 
-> git --graph --oneline --decorate my_master
+> git log --graph --oneline --decorate my_master
 * 6a9bac9 (HEAD, my_master) Working locally
 * 41ce7fa Third commit
 * 672e562 Second commit
@@ -116,7 +116,7 @@ From ../test
 We actually want to see both refs in the log together.
 
 ```
-> git --graph --oneline --decorate my_master origin/master
+> git log --graph --oneline --decorate my_master origin/master
 * 6a9bac9 (HEAD, my_master) Working locally
 | * c6756d7 (orign/master) Working remotely
 |/
@@ -165,7 +165,7 @@ Merge made by the 'recursive' strategy.
  1 file changed, 1 insertion(+)
  create mode 100644 remote.txt
 
-> git --graph --oneline --decorate my_master
+> git log --graph --oneline --decorate my_master
 * fdff1be (HEAD, my_master) Merge branch 'origin/master' into my_master
 |\
 * | 6a9bac9 Working locally
