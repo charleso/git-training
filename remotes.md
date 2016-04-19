@@ -72,8 +72,6 @@ first clone. Because we've manually added the remote rather
 than clone we can choose what we like, but let's stick with "origin".
 
 
-### Question
-
 > Can you add more remotes to that repository?
 
 
