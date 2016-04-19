@@ -69,7 +69,7 @@ Merge made by the 'recursive' strategy.
 | * c6756d7 (orign/master) Working remotely
 |/
 * 41ce7fa Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
@@ -99,7 +99,7 @@ From ../test
 > git log --graph --oneline --decorate my_master
 * 6a9bac9 (HEAD, my_master) Working locally
 * 41ce7fa Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
@@ -121,7 +121,7 @@ We actually want to see both refs in the log together.
 | * c6756d7 (orign/master) Working remotely
 |/
 * 41ce7fa Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
@@ -172,7 +172,7 @@ Merge made by the 'recursive' strategy.
 | * c6756d7 (orign/master) Working remotely
 |/
 * 41ce7fa Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 

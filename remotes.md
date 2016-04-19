@@ -26,12 +26,8 @@ we've just been working in.
 # Clone the current "test" repository to another folder called "local"
 > git clone test test-clone
 
-Cloning into 'git-training'...
-remote: Counting objects: 15, done.
-remote: Compressing objects: 100% (12/12), done.
-remote: Total 15 (delta 2), reused 15 (delta 2), pack-reused 0
-Unpacking objects: 100% (15/15), done.
-Checking connectivity... done.
+Cloning into 'test-clone'...
+done.
 ```
 
 This cloned repository looks a little different than our test repository.
@@ -41,7 +37,7 @@ This cloned repository looks a little different than our test repository.
 > git log --graph --oneline --decorate master
 
 * 41ce7fa (HEAD, origin/master, origin/HEAD, master) Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
@@ -105,6 +101,7 @@ remote: Compressing objects: 100% (12/12), done.
 remote: Total 15 (delta 2), reused 15 (delta 2), pack-reused 0
 Unpacking objects: 100% (15/15), done.
 From ../test
+ * [new branch]      hello      -> origin/hello
  * [new branch]      master     -> origin/master
 ```
 
@@ -132,6 +129,7 @@ origin/
 
 > ls -F .git/refs/remotes/origin
 
+hello
 master
 
 > cat .git/refs/remotes/origin/master
@@ -165,7 +163,7 @@ Already on 'master'
 > git log --graph --oneline --decorate master
 
 * 41ce7fa (HEAD, origin/master, master) Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
@@ -195,7 +193,7 @@ Branch my_master set up to track remote branch master from origin.
 > git log --graph --oneline --decorate my_master
 
 * 41ce7fa (HEAD, origin/master, my_master) Third commit
-* 672e562 Second commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
