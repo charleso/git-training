@@ -110,6 +110,10 @@ the branches.
 ```sh
 > ls
 > git branch
+
+> git log --graph --oneline --decorate master
+
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
 ```
 
 Hmm, what gives? We still don't have any files/branches. Or do we?
@@ -136,6 +140,8 @@ master
 ```
 
 So we don't have any `refs/heads`, but we _do_ have `refs/remotes/origin`.
+
+> Can you run the `log --graph` for this ref/commit?
 
 Whatever old man. Show me the files!
 
