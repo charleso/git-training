@@ -8,8 +8,7 @@ how Git commits work.
 Create a commit
 ---------------
 
-This is something you're going to do.
-[A lot](http://hyperboleandahalf.blogspot.com.au/2010/04/alot-is-better-than-you-at-everything.html).
+This is something you're going to do. A lot.
 
 ```sh
 # Create a file with some text, the value doesn't matter
