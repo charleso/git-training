@@ -34,7 +34,7 @@ them from normal files.
 Displays the contants of the file `foo` on the terminal.
 
 
-## `echo "abc" > xyz.txt
+## `echo "abc" > xyz.txt`
 
 Put the string "abc" into the file `xyz.txt`.
 This will create the file if it doesn't already exist,
@@ -43,7 +43,7 @@ and will overwrite any content that is already there.
 NOTE: This is _one_ `>` character
 
 
-## `echo "abc" >> xyz.txt
+## `echo "abc" >> xyz.txt`
 
 _Append_ the string "abc" on a new line in the file `xyz.txt`.
 This will create the file if it doesn't already exist.
