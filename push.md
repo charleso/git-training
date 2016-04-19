@@ -12,8 +12,9 @@ So where were we?
 ```sh
 > git --graph --oneline --decorate my_master
 
-* a00e002 (HEAD, origin/master, my_master) Raw elephant image
-* 7e4bb5c Initial commit
+* 41ce7fa (HEAD, origin/master, my_master) Third commit
+* 672e562 Second commit
+* 406bb3b Initial commit
 ```
 
 So our current branch (`HEAD`) is referencing `my_master`
@@ -33,8 +34,9 @@ Let's make a local commit.
 > git --graph --oneline --decorate my_master
 
 * 1712de5 (HEAD, my_master) Local changes
-* a00e002 (origin/master) Raw elephant image
-* 7e4bb5c Initial commit
+* 41ce7fa (origin/master) Third commit
+* 672e562 Second commit
+* 406bb3b Initial commit
 ```
 
 It's important to note that this commit is only/still local
@@ -66,7 +68,7 @@ Let's unpack that.
   - Upload any of my local commits to...
 - `origin`
   - The name of the remote, which is just an alias for the full Git URL
-    (eg. https://github.com/charleso/git-training.git).
+    (eg. "../test" in this case or something like https://github.com/charleso/git-training.git).
 - `my_master:master`
   - Update `refs/heads/master` _on the remote_
     to the commit that `refs/heads/my_master` is referencing _locally_

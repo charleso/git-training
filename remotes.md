@@ -12,10 +12,19 @@ to want to get a copy of an existing repository.
 Clone
 -----
 
-If you've ever used Git before it's quite possible you've run something like this.
+If you've ever used Git before it's quite possible you've cloned a repository,
+which contained a number of pre-existing files, commits and branches.
+
+Normally you'll find yourself cloning something from the web, and in
+particular Github. However, there's not special about Github,
+and in fact for the purposes of this guide let's clone the repository
+we've just been working in.
 
 ```sh
-> git clone https://github.com/charleso/git-training.git
+> cd ..
+
+# Clone the current "test" repository to another folder called "local"
+> git clone test test-clone
 
 Cloning into 'git-training'...
 remote: Counting objects: 15, done.
@@ -25,14 +34,15 @@ Unpacking objects: 100% (15/15), done.
 Checking connectivity... done.
 ```
 
-This cloned repository looks a little different than our local,
-test repository.
+This cloned repository looks a little different than our test repository.
 
 ```sh
+> cd test-clone
 > git --graph --oneline --decorate master
 
-* a00e002 (HEAD, origin/master, origin/HEAD, master) Raw elephant image
-* 7e4bb5c Initial commit
+* 41ce7fa (HEAD, origin/master, origin/HEAD, master) Third commit
+* 672e562 Second commit
+* 406bb3b Initial commit
 ```
 
 Previously we've seen `HEAD` and `master`, but what is `origin`?
@@ -47,17 +57,20 @@ It's actually possible to clone a repository in a slightly different way,
 which may help understand a few things.
 
 ```sh
-> mkdir test2
-> cd test2
+> cd ..
+> mkdir local
+> cd local
 > git init
 
-Initialized empty Git repository in test2/.git/
+Initialized empty Git repository in local/.git/
 
-> git remote add origin https://github.com/charleso/git-training.git
+# This assumes you called the other git repository "test"
+> git remote add origin "../test"
 ```
 
 At this point we've added one "remote" to Git.
-You can think of it like an "alias", or short-hand, for that long URL.
+You can think of it like an "alias", or short-hand, for that filepath
+(which is normally going to be a long URL).
 The name "origin", much like "master", is just a default when you
 first clone. Because we've manually added the remote rather
 than clone we can choose what we like, but let's stick with "origin".
@@ -66,9 +79,6 @@ than clone we can choose what we like, but let's stick with "origin".
 ### Question
 
 > Can you add more remotes to that repository?
-
-> Can a remote point to another git repository on your local machine?
-> (eg. `git remote add origin ../test`)
 
 
 Fetch
@@ -94,7 +104,7 @@ remote: Counting objects: 15, done.
 remote: Compressing objects: 100% (12/12), done.
 remote: Total 15 (delta 2), reused 15 (delta 2), pack-reused 0
 Unpacking objects: 100% (15/15), done.
-From https://github.com/charleso/git-training
+From ../test
  * [new branch]      master     -> origin/master
 ```
 
@@ -126,7 +136,7 @@ master
 
 > cat .git/refs/remotes/origin/master
 
-a00e00231ddec7a0ecd32f45789f25e7bd61cbdf
+41ce7faa5b8b2cf480d44c3b12f0545fed9683c3
 ```
 
 So we don't have any `refs/heads`, but we _do_ have `refs/remotes/origin`.
@@ -154,8 +164,9 @@ Already on 'master'
 
 > git --graph --oneline --decorate master
 
-* a00e002 (HEAD, origin/master, master) Raw elephant image
-* 7e4bb5c Initial commit
+* 41ce7fa (HEAD, origin/master, master) Third commit
+* 672e562 Second commit
+* 406bb3b Initial commit
 ```
 
 What _really_ happened.
@@ -183,8 +194,9 @@ Branch my_master set up to track remote branch master from origin.
 
 > git --graph --oneline --decorate my_master
 
-* a00e002 (HEAD, origin/master, my_master) Raw elephant image
-* 7e4bb5c Initial commit
+* 41ce7fa (HEAD, origin/master, my_master) Third commit
+* 672e562 Second commit
+* 406bb3b Initial commit
 ```
 
 Keep in mind that this is the _exact_ same thing as before.
@@ -196,7 +208,7 @@ The only difference is that we've given our _local_ branch a difference name.
   you **cannot checkout remote branches**
 
 As a rule I always recommend people never create a local branch called `master`
-to avoid (the eventual) confusion.
+to avoid confusion that is likely to ensue.
 
 
 > If your local branch is (also) called `master`, what happens if you run `git log master`?
