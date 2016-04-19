@@ -229,4 +229,4 @@ Next
 ----
 
 That's probably enough for one section.
-Read about [push](push.md) to see how to share your changes.
+Read about [pull](pull.md) to see how to get more changes over time.

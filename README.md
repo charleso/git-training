@@ -44,11 +44,18 @@ Sections
 --------
 
 1. [Getting started](init.md)
+
+### Core
+
 2. [Commits](commit.md)
 3. [Master and HEAD](head.md)
 4. [Branches](branches.md)
+
+### Intermediate
+
 5. [Remotes](remotes.md)
-6. [Push](push.md)
+6. [Pull](pull.md)
+7. [Push](push.md)
 
 ### Advanced
 
