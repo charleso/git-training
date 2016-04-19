@@ -124,7 +124,7 @@ Date:   Sun Apr 17 10:35:29 2016 +1000
 
 
 The first thing to note is that `672e562` is only
-the first 7 characters of a must longer hash
+the first 7 characters of a much longer hash
 `672e562c008009ec391e11a1fa3574af39428ae1`.
 
 
