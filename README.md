@@ -56,6 +56,11 @@ Sections
 - [Reset](reset.md)
 - [Index](index.md)
 
+Help
+----
+
+- [Shell commands](shell-cheatsheet.md)
+
 
 References
 ----------
