@@ -250,6 +250,29 @@ pain if used incorrectly.
 What happens if we don't want a fast-forward (read: safe) push?
 
 ```sh
+> git fetch origin
+
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From ../test
+   fdff1be..928b167  my_master  -> origin/my_master
+
+> git log --graph --oneline --decorate my_master origin/my_master
+
+* b49a323 (HEAD, my_master) Working locally again
+| * 928b167 (origin/my_master) Working remotely again
+|/
+* fdff1be Merge branch 'master' of ../test into my_master
+|\
+* | 6a9bac9 Working locally
+| * c6756d7 (origin/master) Working remotely
+|/
+* 41ce7fa Third commit
+* 672e562 (origin/hello) Second commit
+* 406bb3b Initial commit
+
 > git push --force origin my_master
 
 Counting objects: 6, done.
@@ -258,7 +281,20 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 289 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To ../test
- + b49a323...928b167 new_master -> new_master (forced update)
+ + fdff1be...b49a323 new_master -> new_master (forced update)
+
+> git log --graph --oneline --decorate my_master origin/my_master
+
+* b49a323 (HEAD, my_master, origin/my_master) Working locally again
+* fdff1be Merge branch 'master' of ../test into my_master
+|\
+* | 6a9bac9 Working locally
+| * c6756d7 (origin/master) Working remotely
+|/
+* 41ce7fa Third commit
+* 672e562 (origin/hello) Second commit
+* 406bb3b Initial commit
+
 ```
 
 Ignoring the transfer of commits and their files to the remote repository,
@@ -266,7 +302,8 @@ the `push` command is really just updating a remote `refs/heads` file.
 Adding `--force` just bypasses the fast-forward check and updates that refs file
 no matter what. It's similar/equivalent to using `branch --force` locally.
 
-> Why is this dangerous?
+> [Advanced] How would you "recover" that "remote" commit[?](explanation/push_force_recover.md)
+> (Hint: Come back after the [advanced](../README.md#advanced) sections)
 
 
 Next
