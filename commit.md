@@ -67,7 +67,7 @@ Let's do it again, just for fun.
 ```
 
 
-> What happens if you try commiting without changing the file?
+> What happens if you try commiting without changing the file[?](explanation/commit_no_change.md)
 
 Again we see `master`, and now a different hash `672e562`.
 Maybe we should stop to talk about what a hash is.
