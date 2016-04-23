@@ -85,7 +85,7 @@ Changes not staged for commit:
 
 > What do you think will happen when we commit?
 
-> What happens if you delete a file that is in index?
+> What happens if you delete a file that is in index index?
 
 
 Index

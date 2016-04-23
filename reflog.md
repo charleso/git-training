@@ -60,7 +60,7 @@ commands rather than modifying the contents of the `.git` directory.
 
 
 > We manually deleted the `master` branch by deleting a file,
-> can you work out how you would "normally" delete a branch?
+> can you work out how you would "normally" delete a branch[?](explanation/branch_delete.md)
 
 
 Found
@@ -109,13 +109,13 @@ to your account. Or at least you hope they do!
 My advice - don't leave home without `git reflog`.
 
 
-> Can you re-create the `master` branch on that commit?
+> Can you re-create the `master` branch on that commit[?](explanation/reflog_recreate_branch.md)
 
 > Do you think the log keeps growing forever?
 > If you're interested read more at `git reflog --help` and `git gc --help`.
 
 
-If you're interested in how that looks in `.git`:
+If you're interested in how that is actually stored in `.git`:
 
 ```sh
 > cat .git/logs/HEAD

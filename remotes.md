@@ -141,7 +141,7 @@ master
 
 So we don't have any `refs/heads`, but we _do_ have `refs/remotes/origin`.
 
-> Can you run the `log --graph` for this ref/commit?
+> Can you run the `log --graph` for this ref/commit[?](explanation/remotes_log.md)
 
 Whatever old man. Show me the files!
 
@@ -204,27 +204,24 @@ Branch my_master set up to track remote branch master from origin.
 Keep in mind that this is the _exact_ same thing as before.
 The only difference is that we've given our _local_ branch a difference name.
 
-- The first rule of Git remotes is that
-  you cannot checkout remote branches.
-- The second rule of Git remotes is that
-  you **cannot checkout remote branches**
+- The first rule of Git remotes is that you cannot checkout remote branches.
+- The second rule of Git remotes is that you **cannot checkout remote branches**
 
 As a rule I always recommend people never create a local branch called `master`
 to avoid confusion that is likely to ensue.
 
 
 > If your local branch is (also) called `master`, what happens if you run `git log master`?
-> Which branch are you asking about?
-> How could you find out?
+> Which branch are you asking about[?](explanation/remotes_master.md)
 
 > What happens if you _do_ try to checkout a remote branch
 > (eg. `git checkout origin/master`)?
 > How does that change the `HEAD` file?
-> Is that what you would expect?
+> Is that what you would expect[?](explanation/remotes_checkout_remote.md)
 
 > [Advanced] The `HEAD` files points to a ref, the remote branches are just refs.
 > What happens if you manually change the `HEAD` file to point to `refs/remote/origin/master`?
-> If you do, and then make a commit, what happens if you `fetch` after that?
+> If you do, and then make a commit, what happens if you `fetch` after that [?](explanation/remotes_checkout_remote_advanced.md)
 
 
 Next

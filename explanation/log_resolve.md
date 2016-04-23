@@ -1,17 +1,17 @@
 > Can you use `HEAD`, `master` or even `refs/heads/master` in the `log` command?
 
 ```sh
-> git log HEAD
+> git log --graph --oneline --decorate HEAD
 
 * 41ce7fa (HEAD, master) Third commit
 * 672e562 Second commit
 * 406bb3b Initial commit
 
-> git log master
+> git log --graph --oneline --decorate master
 
 ...
 
-> git log refs/heads/master
+> git log --graph --oneline --decorate refs/heads/master
 
 ...
 ```
