@@ -128,10 +128,10 @@ the first 7 characters of a much longer hash
 
 
 > What other forms of the hash does Git accept?
-> Can it be shorter? Longer?
+> Can it be shorter[?](explanation/commit_hash.md)
 
 > What happens when you use log to view the first commit?
-> What was missing?
+> What was missing[?](explanation/commit_first.md)
 
 Secondly you can see the commit "message" that we supplied
 to the `commit -m` command. That's handy, we can

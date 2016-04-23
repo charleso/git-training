@@ -48,7 +48,7 @@ The ones I want to show now look like this:
 ```
 
 
-> What does each of those options do?
+> What does each of those options do[?](explanation/log_options.md)
 > Can you use different combinations of them?
 
 So this contains one extra bit of Git terminology we haven't seen before. `HEAD`.
@@ -151,11 +151,11 @@ We look at some other types of refs [later on](remotes.md), but for now we
 might just focus on heads.
 
 
-> Can you use `HEAD`, `master` or even `refs/heads/master` in the `log` command?
+> Can you use `HEAD`, `master` or even `refs/heads/master` in the `log` command[?](explanation/log_resolve.md)
 
-> What happens if you don't supply `log` a commit/ref, what does it default to?
+> What happens if you don't supply `log` a commit/ref, what does it default to[?](explanation/log_head.md)
 
-> If you make another commit what changes? Is it `HEAD` or the ref?
+> If you make another commit what changes? Is it `HEAD` or the ref[?](explanation/head_commit.md)
 
 
 Next

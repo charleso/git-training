@@ -62,11 +62,11 @@ So creating a branch as simple as just creating a single
 `refs/heads` file with a commit hash as the contents.
 
 
-> What happens if you create a `refs/heads` file manually?
+> What happens if you create a `refs/heads` file manually[?](explanation/branches_create_manual.md)
 
-> What happens if you change the hash of `refs/heads/hello` to another commit?
+> What happens if you change the hash of `refs/heads/hello` to another commit[?](explanation/branches_update_manual.md)
 
-> What happens if you create other types of `refs/` (eg. `refs/test`)?
+> What happens if you create other types of `refs/` (eg. `refs/something`)[?](explanation/branches_create_manual_ref.md)
 
 
 Checkout
@@ -116,11 +116,11 @@ So it changed the current branch, which is stored in the `HEAD` file.
 
 > Try changing the `HEAD` file manually.
 > Does that change the `branch` and `log --graph` ouput as you expect?
-> Does it change the `file.txt` though?
+> Does it change the `file.txt` though[?](explanation/branches_manual_head.md)
 
-> Try making a new commit on `hello`, what does the graph look like now?
+> Try making a new commit on `hello`, what does the graph look like now[?](explanation/branches_hello_commit.md)
 
-> How would you swap the two `master` and `hello` branches around?
+> How would you swap the two `master` and `hello` branches around[?](explanation/branches_swap.md)
 
 
 
