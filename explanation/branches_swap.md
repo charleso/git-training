@@ -46,7 +46,7 @@ Fast-forward
  file.txt | 1 +
  1 file changed, 1 insertion(+)
 
-> git branch -f hello 672e562
+> git branch --force hello 672e562
 
 > git log --graph --oneline --decorate master
 
@@ -55,10 +55,10 @@ Fast-forward
 * 406bb3b Initial commit
 ```
 
-If you tried to use `branch -f` on the `HEAD` branch you'll see an error.
+If you tried to use `branch --force` on the `HEAD` branch you'll see an error.
 
 ```sh
-> git branch -f master hello
+> git branch --force master hello
 
 fatal: Cannot force update the current branch.
 ```

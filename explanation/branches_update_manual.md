@@ -34,7 +34,7 @@ As a point of reference, the Git command for "moving" a branch is
 the following.
 
 ```sh
-> git branch -f hello 672e562
+> git branch --force hello 672e562
 
 > git log --graph --oneline --decorate master
 
