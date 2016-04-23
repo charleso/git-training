@@ -1,51 +1,28 @@
 Git - Push
 ==========
 
-You should read about [remotes](remotes.md) before starting this section.
+You should read about [pull](pull.md) before starting this section.
 
 
-Local
+Push
 -----
 
 So where were we?
 
 ```sh
-> git --graph --oneline --decorate my_master
+> git log --graph --oneline --decorate my_master
 
-* 41ce7fa (HEAD, origin/master, my_master) Third commit
-* 672e562 Second commit
+* fdff1be (HEAD, my_master) Merge branch 'master' of ../test into my_master
+|\
+* | 6a9bac9 Working locally
+| * c6756d7 (orign/master) Working remotely
+|/
+* 41ce7fa Third commit
+* 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
 ```
 
-So our current branch (`HEAD`) is referencing `my_master`
-(or `refs/heads/my_master` to be exact).
-
-Let's make a local commit.
-
-```sh
-> echo "local" >> test.txt
-> git add .
-> git commit -m "Local changes"
-
-[master 1712de5] Local changes
- 1 file changed, 1 insertion(+)
- create mode 100644 test.txt
-
-> git --graph --oneline --decorate my_master
-
-* 1712de5 (HEAD, my_master) Local changes
-* 41ce7fa (origin/master) Third commit
-* 672e562 Second commit
-* 406bb3b Initial commit
-```
-
-It's important to note that this commit is only/still local
-at this point. Almost all commands in Git will only
-work on your local repository.
-
-
-Push
-----
+How do we "share" our work with the remote server?
 
 Most of the time you'll see the following documented.
 
@@ -56,10 +33,34 @@ Most of the time you'll see the following documented.
 And in fact this is _often_ all that is required.
 However this is another one of those cases where
 Git is being nice and saving us some typing.
-What do we really mean?
+
+Let's look at some of the ways pushing can fail.
+
+
+Match
+-----
+
+If you're following along at this point (and depending on your version of `git`),
+you will probably see the following error.
 
 ```sh
-> git push origin my_master:master
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:master
+
+To push to the branch of the same name on the remote, use
+
+    git push origin my_master
+```
+
+So because we've created a branch with a different name "my_master"
+Git doesn't know what we mean.
+One of it's suggestions is the following.
+
+```sh
+> git push origin HEAD:master
 ```
 
 Let's unpack that.
@@ -69,12 +70,203 @@ Let's unpack that.
 - `origin`
   - The name of the remote, which is just an alias for the full Git URL
     (eg. "../test" in this case or something like https://github.com/charleso/git-training.git).
-- `my_master:master`
+- `HEAD:master`
   - Update `refs/heads/master` _on the remote_
-    to the commit that `refs/heads/my_master` is referencing _locally_
+    to the commit that `HEAD` (ie `refs/heads/my_master`) is referencing _locally_
 
 My advice to people starting with Git is to always type this out,
 just as a reminder of what is really going on.
+
+
+Denied
+------
+
+Unfortunately if you run that command, and you've been following along closely,
+it's likely that you'll now see _this_ horrible error.
+
+```
+Counting objects: 7, done.
+Writing objects: 100% (3/3), 255 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: error: refusing to update checked out branch: refs/heads/master
+remote: error: By default, updating the current branch in a non-bare repository
+remote: error: is denied, because it will make the index and work tree inconsistent
+remote: error: with what you pushed, and will require 'git reset --hard' to match
+remote: error: the work tree to HEAD.
+remote: error:
+remote: error: You can set 'receive.denyCurrentBranch' configuration variable to
+remote: error: 'ignore' or 'warn' in the remote repository to allow pushing into
+remote: error: its current branch; however, this is not recommended unless you
+remote: error: arranged to update its work tree to match what you pushed in some
+remote: error: other way.
+remote: error:
+remote: error: To squelch this message and still keep the default behaviour, set
+remote: error: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+To ../test
+ ! [remote rejected] my_master -> master (branch is currently checked out)
+ error: failed to push some refs to '../test'
+```
+
+Yuck. But don't worry too much about what you're witnessing, it's not something you'll
+normally see when your repository is cloned from a "real" remote server like Github.
+It's only happened because we have two normal Git repositories checked out.
+
+Basically you can't push to a branch that's checked out, which in this case
+is the `master` branch in the `test` repository.
+To work around this you can either:
+
+1. Push to anything _but_ the `master` branch
+
+    ```sh
+    git push origin my_master
+    ```
+
+2. Go back to the `test` repository and checkout another branch
+
+   ```sh
+   cd ../test
+   git branch ignoreme
+   git checkout ignoreme
+   ```
+
+Let's just create a new branch.
+
+
+Success
+-------
+
+```sh
+> git push origin my_master
+
+Counting objects: 7, done.
+Writing objects: 100% (3/3), 255 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To ../test
+ * [new branches]    my_master -> my_master
+```
+
+```sh
+> git log --graph --oneline --decorate my_master
+
+* fdff1be (HEAD, my_master, origin/my_master) Merge branch 'master' of ../test into my_master
+|\
+* | 6a9bac9 Working locally
+| * c6756d7 (orign/master) Working remotely
+|/
+* 41ce7fa Third commit
+* 672e562 (origin/hello) Second commit
+* 406bb3b Initial commit
+```
+
+So we've just created a new branch on the remote repository.
+You can even see a new `origin/my_master` remote ref has been created _localy_
+to represent this.
+
+```sh
+> cd ../test
+> git log --graph --oneline --decorate my_master
+
+* fdff1be (my_master) Merge branch 'master' of ../test into my_master
+|\
+* | 6a9bac9 Working locally
+| * c6756d7 (HEAD, master) Working remotely
+|/
+* 41ce7fa Third commit
+* 672e562 (hello) Second commit
+* 406bb3b Initial commit
+```
+
+Switching back to the "remote" repository things look basically the same,
+except that `origin/` remote refs are now just "local".
+
+
+Fast Forward
+------------
+
+So what happens if "someone else" updates the `my_master` branch
+in the remote repository?
+This is the same scenario that we saw earlier when we had different
+local and remote commits. Let's do that one more time.
+
+```sh
+> cd ../test
+> git checkout my_master
+> echo "remote" >> remote.txt
+> git add .
+> git commit -m "Working remotely again"
+# Switch branches to avoid the push error we saw earlier
+> git checkout master
+
+> cd ../local
+> echo "local" >> local.txt
+> git add .
+> git commit -m "Working locally again"
+```
+
+And so we have:
+
+```
+> git log --graph --oneline --decorate my_master
+
+* b49a323 (HEAD, my_master) Working locally again
+* fdff1be (origin/my_master) Merge branch 'master' of ../test into my_master
+|\
+* | 6a9bac9 Working locally
+| * c6756d7 (origin/master) Working remotely
+|/
+* 41ce7fa Third commit
+* 672e562 (origin/hello) Second commit
+* 406bb3b Initial commit
+```
+
+What happens if we try to push now?
+
+```
+> git push origin my_master
+
+To ../test
+ ! [rejected]        HEAD -> my_master (fetch first)
+error: failed to push some refs to '../test'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+You might want read about fast-forward pushes in
+[git push --help](https://git-scm.com/docs/git-push#_note_about_fast_forwards).
+
+> Try to push the `my_master` branch successfully (Hint: we've done this [before](pull.md))
+
+
+Force
+-----
+
+**Warning:** Please be careful with this next command. I want to cover
+what it's doing, but it's one of those things that can really cause significant
+pain if used incorrectly.
+
+What happens if we don't want a fast-forward (read: safe) push?
+
+```sh
+> git push --force origin my_master
+
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To ../test
+ + b49a323...928b167 new_master -> new_master (forced update)
+```
+
+Ignoring the transfer of commits and their files to the remote repository,
+the `push` command is really just updating a remote `refs/heads` file.
+Adding `--force` just bypasses the fast-forward check and updates that refs file
+no matter what. It's similar/equivalent to using `branch --force` locally.
+
+> Why is this dangerous?
 
 
 Next
