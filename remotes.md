@@ -107,6 +107,11 @@ What's extermely powerful about Git is that `fetch` will download _all_ of the r
 not just the files in `master`. It should contain all of the history too for _all_ of
 the branches.
 
+
+> [Advanced] Can you fetch using the path/URL (ie `../test`) instead of the remote name?
+> What does it do differently[?](explanation/remotes_fetch_url.md)
+
+
 ```sh
 > ls
 > git branch
