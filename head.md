@@ -48,8 +48,8 @@ The ones I want to show now look like this:
 ```
 
 
-> What does each of those options do[?](explanation/log_options.md)
-> Can you use different combinations of them?
+> What does each of those options do?
+> Can you use different combinations of them[?](explanation/log_options.md)
 
 So this contains one extra bit of Git terminology we haven't seen before. `HEAD`.
 

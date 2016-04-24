@@ -13,7 +13,7 @@ Previously we saw that Git has a concept called `HEAD`
 that references `refs/heads/master`, which we know
 as just `master`.
 
-```
+```sh
 > git log --graph --oneline --decorate master
 
 * 41ce7fa (HEAD, master) Third commit
