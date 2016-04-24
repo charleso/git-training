@@ -9,8 +9,9 @@
 ```
 
 It's important to keep in mind that `log` _always_ has to "start" from a commit.
-The question is - where?
 It's _not_ showing all the commits, which isn't obvious yet until we have more branches.
+
+The question is - how does it decide which commit to start from?
 
 It's using `HEAD`, as do many of Git's commands when not supplied with a starting commit.
 
