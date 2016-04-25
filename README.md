@@ -66,6 +66,7 @@ Sections
 Help
 ----
 
+- [Git commands](git_cheatsheet.md)
 - [Shell commands](shell-cheatsheet.md)
 
 
