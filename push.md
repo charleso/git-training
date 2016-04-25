@@ -239,7 +239,7 @@ You might want read about fast-forward pushes in
 
 > Try to push the `my_master` branch successfully (Hint: we've done this [before](pull.md))
 
-> [Advanced] How would you delete a branch using just push[?](explanation/push_delete.md).
+> [Advanced] How would you delete a branch using just push[?](explanation/push_delete.md)
 > NOTE: This is probably not immediately obvious.
 
 
