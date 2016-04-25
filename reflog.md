@@ -3,6 +3,13 @@ Git - Reflog
 
 You should have previously read [about branches](branches.md).
 
+For the most part Git tries to keep you safe and
+make sure that nothing bad happens to your branches/commits.
+However, there are cases where you may accidentally "lose"
+a commit.
+
+Not to fear! Git has a nifty way to find those missing commits.
+
 
 Lost
 ----
