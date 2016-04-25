@@ -1,8 +1,6 @@
 Git Training
 ============
 
-Welcome.
-
 Does this look familiar?
 
 ![xkcd](http://imgs.xkcd.com/comics/git.png)
