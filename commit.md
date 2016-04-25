@@ -100,10 +100,6 @@ If you're wondering why the hash isn't just a number,
 that's a little harder to explain (and I'm not going to try).
 
 
-> The full hash is stored as a file under `.git` somewhere,
-> can you find it[?](explanation/commit_hash_file.md)
-
-
 Log
 ---
 
@@ -150,6 +146,9 @@ Who broke the program - oh it was Charles!!!
 
 
 > Create a few more commits and then look at them with log
+
+> [Advanced] The full hash is stored as a file under `.git` somewhere,
+> can you find it[?](explanation/commit_hash_file.md)
 
 
 Next
