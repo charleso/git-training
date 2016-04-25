@@ -3,8 +3,6 @@ Git - Reflog
 
 You should have previously read [about branches](branches.md).
 
-[Let's. Get. Dangerous.](https://www.youtube.com/watch?v=375ENQbru8s)
-
 
 Lost
 ----
