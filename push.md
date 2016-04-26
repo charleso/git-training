@@ -239,7 +239,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 You might want read about fast-forward pushes in
 [git push --help](https://git-scm.com/docs/git-push#_note_about_fast_forwards).
 
-> Try to push the `my_master` branch successfully (Hint: we've done this [before](pull.md))
+> Can you try to push the `my_master` branch successfully[?](explanation/push_merge.md)
+> (Hint: we've done this [before](pull.md))
 
 > [Advanced] How would you delete a branch using just push[?](explanation/push_delete.md)
 > NOTE: This is probably not immediately obvious.
