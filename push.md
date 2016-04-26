@@ -73,6 +73,8 @@ Let's unpack that.
 - `HEAD:master`
   - Update `refs/heads/master` _on the remote_
     to the commit that `HEAD` (ie `refs/heads/my_master`) is referencing _locally_
+  - If you're pushing from/to the same branch name (eg. `master:master`) then
+    you can just shorten that to just the name. (eg. `git push origin master`)
 
 My advice to people starting with Git is to always type this out,
 just as a reminder of what is really going on.
