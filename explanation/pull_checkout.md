@@ -3,7 +3,7 @@
 ```sh
 > git log --graph --oneline --decorate origin/master
 
-* 6a9bac9 (HEAD, my_master) Working locally
+* c6756d7 (origin/master) Working remotely
 * 41ce7fa Third commit
 * 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
@@ -23,7 +23,7 @@ Your branch is up-to-date with 'origin/master'.
 
 > git log --graph --oneline --decorate origin/master
 
-* c6756d7 (HEAD, my_master, origin/master) Working remotely
+* c6756d7 (HEAD, new_master, origin/master) Working remotely
 * 41ce7fa Third commit
 * 672e562 (origin/hello) Second commit
 * 406bb3b Initial commit
