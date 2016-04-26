@@ -16,7 +16,7 @@ If you've ever used Git before it's quite possible you've cloned a repository,
 which contained a number of pre-existing files, commits and branches.
 
 Normally you'll find yourself cloning something from the web, and in
-particular Github. However, there's not special about Github,
+particular Github. However, there's nothing special about Github,
 and in fact for the purposes of this guide let's clone the repository
 we've just been working in.
 
