@@ -8,19 +8,19 @@ Does this look familiar?
 Sadly it's not that far from the truth for many users of Git,
 and doesn't always improve with more exposure.
 
-One anology could be made with the following comic.
+One analogy could be made with the following comic.
 
 ![](images/elephant.jpg?raw=)
 
 In this case each blind man could represent a different Git command.
 By just running the commands, there are a number of cases where
-what you _think_ Git is doing is not actually what it's _actually_ doing.
+what you _think_ Git is doing is not what it's _actually_ doing.
 
 In particular this often involves commands relating to branches,
 and pushing/pulling from a remote server.
 
 This material is _not_ intended to teach advanced Git
-(eg. Run `git magic --hard --all` and you'll be more 100x more productive).
+(eg. run `git magic --hard --all` and you'll be more 100x more productive).
 The aim is to focus on a few critical aspects of Git that can often cause
 the most amount of confusion.
 

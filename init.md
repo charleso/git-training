@@ -33,9 +33,19 @@ Terminology
 -----------
 
 - The `.git` folder is referred to as the "repository" or
-  "local repository"
+  **"local repository"**
 - The directory above the `.git` folder, where you edit your
-  actual files, is called the "working directory"
+  actual files, is called the "working directory" or **"workspace"**
+- Refer to [Git Lifecycle diagram](images/git-transport.png)
+
+
+Summary of commands
+-------
+
+```sh
+mkdir -p test; cd test;
+git init; ls -F .git;
+```
 
 
 Warning
@@ -50,7 +60,7 @@ learn how Git works. :)
 
 That said, in general it is _highly_ recommended not to
 touch anything in this folder normally, as it may result in
-corrupt or loss of data.
+data loss or corruption.
 
 
 Next
