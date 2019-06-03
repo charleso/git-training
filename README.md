@@ -75,3 +75,4 @@ References
 - https://git-scm.com/book
 - http://www-cs-students.stanford.edu/~blynn/gitmagic/
 - http://eagain.net/articles/git-for-computer-scientists/
+- https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc
