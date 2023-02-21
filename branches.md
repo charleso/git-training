@@ -122,6 +122,7 @@ So it changed the current branch, which is stored in the `HEAD` file.
 
 > How would you swap the two `master` and `hello` branches around[?](explanation/branches_swap.md)
 
+> We've seen that the `git checkout` command can be used to checkout branches which are just references to commits. Can `git checkout` command be used to checkout commits directly? What happens to `ref/heads` and `.git/HEAD` if this is the case[?](explanation/detached_state.md)
 
 
 Next

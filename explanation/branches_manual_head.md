@@ -30,7 +30,7 @@ something
 
 So in my case I was on the `master` branch, and manually switching
 to `hello` (obviously) didn't update the working files magically.
-That's something you neeed `checkout` for.
+That's something you need `checkout` for.
 
 So in some ways you can think of `checkout` as two operations:
 
